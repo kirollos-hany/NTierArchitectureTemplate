@@ -1,0 +1,8 @@
+/MyTemplate.DAL/bin
+/MyTemplate.DAL/obj
+/.vscode
+/MyTemplate.BLL/obj
+/MyTemplate.BLL/bin
+/MyTemplate.Web/obj
+/.idea
+/MyTemplate.Web/bin

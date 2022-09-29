@@ -1,0 +1,36 @@
+2022-09-29 21:07:18.356 +02:00 [INF] Now listening on: https://localhost:7190
+2022-09-29 21:07:18.396 +02:00 [INF] Now listening on: http://localhost:5241
+2022-09-29 21:07:18.399 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 21:07:18.399 +02:00 [INF] Hosting environment: Development
+2022-09-29 21:07:18.399 +02:00 [INF] Content root path: /home/kirollos/Kiro/Personal/Dotnet-Projects/NTierTemplate/MyTemplate.Web/
+2022-09-29 21:08:07.531 +02:00 [INF] Application is shutting down...
+2022-09-29 21:11:10.278 +02:00 [INF] Now listening on: https://localhost:7190
+2022-09-29 21:11:10.313 +02:00 [INF] Now listening on: http://localhost:5241
+2022-09-29 21:11:10.315 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 21:11:10.315 +02:00 [INF] Hosting environment: Development
+2022-09-29 21:11:10.316 +02:00 [INF] Content root path: /home/kirollos/Kiro/Personal/Dotnet-Projects/NTierTemplate/MyTemplate.Web/
+2022-09-29 21:11:34.198 +02:00 [INF] Application is shutting down...
+2022-09-29 21:12:02.482 +02:00 [INF] Now listening on: https://localhost:7190
+2022-09-29 21:12:02.529 +02:00 [INF] Now listening on: http://localhost:5241
+2022-09-29 21:12:02.533 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 21:12:02.533 +02:00 [INF] Hosting environment: Development
+2022-09-29 21:12:02.533 +02:00 [INF] Content root path: /home/kirollos/Kiro/Personal/Dotnet-Projects/NTierTemplate/MyTemplate.Web/
+2022-09-29 21:12:57.391 +02:00 [INF] Application is shutting down...
+2022-09-29 21:13:33.949 +02:00 [INF] Now listening on: https://localhost:7190
+2022-09-29 21:13:33.993 +02:00 [INF] Now listening on: http://localhost:5241
+2022-09-29 21:13:33.996 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 21:13:33.996 +02:00 [INF] Hosting environment: Development
+2022-09-29 21:13:33.997 +02:00 [INF] Content root path: /home/kirollos/Kiro/Personal/Dotnet-Projects/NTierTemplate/MyTemplate.Web/
+2022-09-29 21:15:34.147 +02:00 [INF] Application is shutting down...
+2022-09-29 21:15:41.628 +02:00 [INF] Now listening on: https://localhost:7190
+2022-09-29 21:15:41.675 +02:00 [INF] Now listening on: http://localhost:5241
+2022-09-29 21:15:41.678 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 21:15:41.678 +02:00 [INF] Hosting environment: Development
+2022-09-29 21:15:41.679 +02:00 [INF] Content root path: /home/kirollos/Kiro/Personal/Dotnet-Projects/NTierTemplate/MyTemplate.Web/
+2022-09-29 21:18:58.351 +02:00 [INF] Application is shutting down...
+2022-09-29 21:20:10.238 +02:00 [INF] Now listening on: https://localhost:7190
+2022-09-29 21:20:10.279 +02:00 [INF] Now listening on: http://localhost:5241
+2022-09-29 21:20:10.282 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 21:20:10.282 +02:00 [INF] Hosting environment: Development
+2022-09-29 21:20:10.282 +02:00 [INF] Content root path: /home/kirollos/Kiro/Personal/Dotnet-Projects/NTierTemplate/MyTemplate.Web/
+2022-09-29 21:20:38.085 +02:00 [INF] Application is shutting down...
