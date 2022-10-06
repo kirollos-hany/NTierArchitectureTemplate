@@ -5,6 +5,7 @@ using ExtCore.FileStorage;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -18,6 +19,7 @@ using MyTemplate.Web.Security;
 using MyTemplate.Web.Security.Entities;
 using MyTemplate.Web.Security.Persistence;
 using MyTemplate.Web.Security.Token;
+using MyTemplate.Web.Security.Token.Providers;
 using Newtonsoft.Json.Converters;
 using Serilog;
 
@@ -40,12 +42,15 @@ builder
 #endregion
 
 #region Identity Configuration
+
 builder.Services.AddIdentity<User, Role>(options =>
-{
-    //identity configuration goes here
-})
-.AddRoles<Role>()
-.AddEntityFrameworkStores<SecurityDbContext>();
+    {
+        //identity configuration goes here
+    })
+    .AddRoles<Role>()
+    .AddEntityFrameworkStores<SecurityDbContext>()
+    .AddDefaultTokenProviders()
+    .AddTokenProvider<JwtProvider>(nameof(LoginProviders.MyTemplate));
 
 #endregion 
 
