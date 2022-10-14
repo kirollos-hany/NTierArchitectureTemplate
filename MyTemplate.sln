@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTemplate.BLL", "MyTemplat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTemplate.Web", "MyTemplate.Web\MyTemplate.Web.csproj", "{EEC6A201-5F89-48A8-A876-172CD8170E9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTemplate.Common", "MyTemplate.Common\MyTemplate.Common.csproj", "{CCD5A406-F3FB-4DA6-8C1F-191323751F5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{EEC6A201-5F89-48A8-A876-172CD8170E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEC6A201-5F89-48A8-A876-172CD8170E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEC6A201-5F89-48A8-A876-172CD8170E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCD5A406-F3FB-4DA6-8C1F-191323751F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCD5A406-F3FB-4DA6-8C1F-191323751F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCD5A406-F3FB-4DA6-8C1F-191323751F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCD5A406-F3FB-4DA6-8C1F-191323751F5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
