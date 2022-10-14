@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyTemplate.DAL\MyTemplate.DAL.csproj" />
+    <ProjectReference Include="..\MyTemplate.Common\MyTemplate.Common.csproj" />
   </ItemGroup>
 
 </Project>

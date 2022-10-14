@@ -30,6 +30,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyTemplate.BLL\MyTemplate.BLL.csproj" />
+    <ProjectReference Include="..\MyTemplate.Common\MyTemplate.Common.csproj" />
   </ItemGroup>
 
 </Project>
