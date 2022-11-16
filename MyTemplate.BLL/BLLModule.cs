@@ -1,13 +1,11 @@
-﻿using System.Reflection;
-using Autofac;
-using Mapster;
+﻿using Autofac;
 using Module = Autofac.Module;
 
 namespace MyTemplate.BLL;
-public class BLLModule : Module
+public class BllModule : Module
 { 
     protected override void Load(ContainerBuilder builder)
     {
-        TypeAdapterConfig.GlobalSettings.Scan(Assembly.GetExecutingAssembly());
+
     }
 }

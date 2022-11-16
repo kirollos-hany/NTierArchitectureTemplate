@@ -101,7 +101,7 @@ builder.Services.AddDbContextPool<SecurityDbContext>(options => options.UseSqlSe
 #endregion
 
 #region fluent validation
-builder.Services.AddValidatorsFromAssemblyContaining<BLLModule>();
+builder.Services.AddValidatorsFromAssemblyContaining<BllModule>();
 // Add services to the container.
 #endregion
 
@@ -128,7 +128,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
 {
     containerBuilder.RegisterModule(new DALModule());
-    containerBuilder.RegisterModule(new BLLModule());
+    containerBuilder.RegisterModule(new BllModule());
     containerBuilder.RegisterModule(new WebModule());
 });
 
