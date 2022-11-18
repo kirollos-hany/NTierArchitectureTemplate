@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MyTemplate.DAL.Persistence;
+using MyTemplate.Infrastructure.Persistence;
 
-namespace MyTemplate.DAL;
+namespace MyTemplate.Infrastructure;
 
 public static class SetupDbContext
 {

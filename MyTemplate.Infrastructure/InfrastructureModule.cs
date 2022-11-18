@@ -1,12 +1,12 @@
 using Autofac;
 using ExtCore.FileStorage.Abstractions;
 using ExtCore.FileStorage.FileSystem;
-using MyTemplate.DAL.IO;
-using MyTemplate.DAL.Persistence;
+using MyTemplate.Infrastructure.IO;
+using MyTemplate.Infrastructure.Persistence;
 using Module = Autofac.Module;
-namespace MyTemplate.DAL;
+namespace MyTemplate.Infrastructure;
 
-public class DALModule : Module
+public class InfrastructureModule : Module
 {
     protected override void Load(ContainerBuilder builder)
     {

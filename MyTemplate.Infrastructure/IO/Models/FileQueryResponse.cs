@@ -1,4 +1,4 @@
-namespace MyTemplate.DAL.IO.Models;
+namespace MyTemplate.Infrastructure.IO.Models;
 
 public class FileQueryResponse
 {

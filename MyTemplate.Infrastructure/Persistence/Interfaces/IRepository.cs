@@ -1,6 +1,6 @@
 using Ardalis.Specification;
 
-namespace MyTemplate.DAL.Persistence;
+namespace MyTemplate.Infrastructure.Persistence;
 
 public interface IRepository<T> : IRepositoryBase<T> where T : class, IAggregateRoot
 {

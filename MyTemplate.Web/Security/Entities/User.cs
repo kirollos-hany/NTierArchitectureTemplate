@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Identity;
-using MyTemplate.DAL.Persistence;
+using MyTemplate.Infrastructure.Persistence;
 
 namespace MyTemplate.Web.Security.Entities;
 

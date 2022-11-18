@@ -16,4 +16,8 @@
       <PackageReference Include="Autofac" Version="6.4.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MyTemplate.Domain\MyTemplate.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

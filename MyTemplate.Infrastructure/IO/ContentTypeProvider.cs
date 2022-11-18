@@ -1,5 +1,5 @@
 #nullable disable
-namespace MyTemplate.DAL.IO;
+namespace MyTemplate.Infrastructure.IO;
 
 public class FileExtensionContentTypeProvider : IContentTypeProvider
 {

@@ -1,7 +1,7 @@
 using Ardalis.Specification.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace MyTemplate.DAL.Persistence;
+namespace MyTemplate.Infrastructure.Persistence;
 
 public class Repository<T> : RepositoryBase<T>, IReadRepository<T>, IRepository<T> where T : class, IAggregateRoot
 {

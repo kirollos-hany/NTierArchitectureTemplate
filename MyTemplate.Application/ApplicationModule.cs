@@ -1,8 +1,8 @@
 ﻿using Autofac;
 using Module = Autofac.Module;
 
-namespace MyTemplate.BLL;
-public class BllModule : Module
+namespace MyTemplate.Application;
+public class ApplicationModule : Module
 { 
     protected override void Load(ContainerBuilder builder)
     {

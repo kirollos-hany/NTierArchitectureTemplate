@@ -3,15 +3,14 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using ExtCore.FileStorage;
 using FluentValidation;
-using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using MyTemplate.BLL;
-using MyTemplate.DAL;
+using MyTemplate.Application;
+using MyTemplate.Infrastructure;
 using MyTemplate.Web;
 using MyTemplate.Web.Extensions;
 using MyTemplate.Web.Filters;
@@ -101,7 +100,7 @@ builder.Services.AddDbContextPool<SecurityDbContext>(options => options.UseSqlSe
 #endregion
 
 #region fluent validation
-builder.Services.AddValidatorsFromAssemblyContaining<BllModule>();
+builder.Services.AddValidatorsFromAssemblyContaining<ApplicationModule>();
 // Add services to the container.
 #endregion
 
@@ -127,8 +126,8 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
 {
-    containerBuilder.RegisterModule(new DALModule());
-    containerBuilder.RegisterModule(new BllModule());
+    containerBuilder.RegisterModule(new InfrastructureModule());
+    containerBuilder.RegisterModule(new ApplicationModule());
     containerBuilder.RegisterModule(new WebModule());
 });
 

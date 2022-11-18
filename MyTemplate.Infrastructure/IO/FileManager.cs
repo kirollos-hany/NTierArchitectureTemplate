@@ -1,7 +1,7 @@
 using ExtCore.FileStorage.Abstractions;
-using MyTemplate.DAL.IO.Models;
+using MyTemplate.Infrastructure.IO.Models;
 
-namespace MyTemplate.DAL.IO;
+namespace MyTemplate.Infrastructure.IO;
 public class FileManager : IFileManager
 {
     private readonly IFileStorage _fileStorage;

@@ -1,6 +1,6 @@
-using MyTemplate.DAL.IO.Models;
+using MyTemplate.Infrastructure.IO.Models;
 
-namespace MyTemplate.DAL.IO;
+namespace MyTemplate.Infrastructure.IO;
 public interface IFileManager
 {
   Task<string> SaveFileAsync(Stream fileStream);
