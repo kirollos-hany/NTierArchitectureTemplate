@@ -1,5 +1,3 @@
-using System;
-
 namespace MyTemplate.Domain.Common.Entities;
 
 public class BaseEntity
