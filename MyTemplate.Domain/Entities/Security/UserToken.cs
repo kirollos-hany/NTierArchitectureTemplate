@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace MyTemplate.Web.Security.Entities;
+namespace MyTemplate.Domain.Entities.Security;
 
 public class UserToken : IdentityUserToken<Guid>
 {

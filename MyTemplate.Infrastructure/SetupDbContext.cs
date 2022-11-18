@@ -12,7 +12,8 @@ public static class SetupDbContext
         {
             options.UseSqlServer(connectionString, opts => 
             {
-               opts.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery); 
+               opts.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery);
+               opts.MigrationsAssembly("MyTemplate.Web");
             });
         });
     }

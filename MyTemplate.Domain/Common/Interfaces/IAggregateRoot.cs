@@ -1,4 +1,4 @@
-namespace MyTemplate.Infrastructure.Persistence;
+namespace MyTemplate.Domain.Common.Interfaces;
 
 
 //marker interface for DDD aggregate root

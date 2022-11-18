@@ -1,4 +1,5 @@
 using ExtCore.FileStorage.Abstractions;
+using MyTemplate.Domain.Interfaces.IO;
 
 namespace MyTemplate.Infrastructure.IO;
 public class FileManager : IFileManager

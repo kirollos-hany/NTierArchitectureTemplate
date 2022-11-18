@@ -1,6 +1,9 @@
 using Autofac;
 using ExtCore.FileStorage.Abstractions;
 using ExtCore.FileStorage.FileSystem;
+using MyTemplate.Domain.Interfaces;
+using MyTemplate.Domain.Interfaces.IO;
+using MyTemplate.Domain.Interfaces.Persistence;
 using MyTemplate.Infrastructure.IO;
 using MyTemplate.Infrastructure.Persistence;
 using Module = Autofac.Module;

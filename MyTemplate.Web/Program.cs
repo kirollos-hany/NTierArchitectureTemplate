@@ -10,13 +10,14 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MyTemplate.Application;
+using MyTemplate.Domain.Common.Entities;
+using MyTemplate.Domain.Entities.Security;
 using MyTemplate.Infrastructure;
+using MyTemplate.Infrastructure.Persistence;
 using MyTemplate.Web;
 using MyTemplate.Web.Extensions;
 using MyTemplate.Web.Filters;
 using MyTemplate.Web.Security;
-using MyTemplate.Web.Security.Entities;
-using MyTemplate.Web.Security.Persistence;
 using MyTemplate.Web.Security.Token;
 using MyTemplate.Web.Security.Token.Providers;
 using Newtonsoft.Json.Converters;
@@ -47,7 +48,7 @@ builder.Services.AddIdentity<User, Role>(options =>
         //identity configuration goes here
     })
     .AddRoles<Role>()
-    .AddEntityFrameworkStores<SecurityDbContext>()
+    .AddEntityFrameworkStores<MyTemplateDbContext>()
     .AddDefaultTokenProviders()
     .AddTokenProvider<JwtProvider>(nameof(LoginProviders.MyTemplate));
 
@@ -96,7 +97,6 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
 #region ef core config
 var sqlServerConnection = builder.Configuration.GetConnectionString("SqlServer");
 builder.Services.AddDbContext(sqlServerConnection);
-builder.Services.AddDbContextPool<SecurityDbContext>(options => options.UseSqlServer(sqlServerConnection));
 #endregion
 
 #region fluent validation
@@ -175,5 +175,13 @@ app.UseEndpoints(endpoints =>
   endpoints.MapDefaultControllerRoute();
   endpoints.MapRazorPages();
 });
+
+//migrate db context
+var scope = app.Services.CreateAsyncScope();
+await using (scope)
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<MyTemplateDbContext>();
+    await dbContext.Database.MigrateAsync();
+}
 
 app.Run();

@@ -1,6 +1,6 @@
 using ExtCore.FileStorage.Abstractions;
 
-namespace MyTemplate.Infrastructure.IO;
+namespace MyTemplate.Domain.Interfaces.IO;
 public interface IFileManager
 {
   Task SaveFileAsync(Stream fileStream, string directoryName, string fileName);
