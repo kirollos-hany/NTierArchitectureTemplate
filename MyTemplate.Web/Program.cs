@@ -3,11 +3,13 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using ExtCore.FileStorage;
 using FluentValidation;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Net.Http.Headers;
 using Microsoft.OpenApi.Models;
 using MyTemplate.Application;
 using MyTemplate.Domain.Common.Entities;
@@ -22,6 +24,7 @@ using MyTemplate.Web.Security.Token;
 using MyTemplate.Web.Security.Token.Providers;
 using Newtonsoft.Json.Converters;
 using Serilog;
+using SameSiteMode = Microsoft.AspNetCore.Http.SameSiteMode;
 
 var builder = WebApplication.CreateBuilder(args);
 #region logging
@@ -47,6 +50,7 @@ builder.Services.AddIdentity<User, Role>(options =>
     {
         //identity configuration goes here
     })
+    .AddSignInManager()
     .AddRoles<Role>()
     .AddEntityFrameworkStores<MyTemplateDbContext>()
     .AddDefaultTokenProviders()
@@ -62,8 +66,13 @@ builder
 .Services
 .AddAuthentication(options =>
 {
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultAuthenticateScheme = "JWT_OR_COOKIES";
+    options.DefaultChallengeScheme = "JWT_OR_COOKIES";
+})
+.AddCookie(options =>
+{
+    //cookie authentication options goes here
+    //login, logout paths, and cookie expiration options
 })
 .AddJwtBearer(options =>
 {
@@ -77,6 +86,17 @@ builder
         ValidAudience = builder.Configuration["JWT:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secrets"])),
         RoleClaimType = nameof(ClaimsTypes.Roles)
+    };
+})
+.AddPolicyScheme("JWT_OR_COOKIE", "JWT_OR_COOKIE", options =>
+{
+    options.ForwardDefaultSelector = context =>
+    {
+        string authorization = context.Request.Headers[HeaderNames.Authorization];
+        if (!string.IsNullOrEmpty(authorization) && authorization.StartsWith("Bearer "))
+            return JwtBearerDefaults.AuthenticationScheme;
+                
+        return CookieAuthenticationDefaults.AuthenticationScheme;
     };
 });
 
