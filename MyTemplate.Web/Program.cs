@@ -19,8 +19,8 @@ using MyTemplate.Infrastructure.Persistence;
 using MyTemplate.Web;
 using MyTemplate.Web.Extensions;
 using MyTemplate.Web.Filters;
-using MyTemplate.Web.Security;
-using MyTemplate.Web.Security.Token;
+using MyTemplate.Web.Security.Enums;
+using MyTemplate.Web.Security.Token.Configuration;
 using MyTemplate.Web.Security.Token.Providers;
 using Newtonsoft.Json.Converters;
 using Serilog;
@@ -190,11 +190,8 @@ app.UseSwaggerUI(c =>
   c.DocumentTitle = "MyTemplate";
 });
 
-app.UseEndpoints(endpoints =>
-{
-  endpoints.MapDefaultControllerRoute();
-  endpoints.MapRazorPages();
-});
+app.MapDefaultControllerRoute();
+app.MapRazorPages();
 
 //migrate db context
 var scope = app.Services.CreateAsyncScope();

@@ -1,3 +1,3 @@
-﻿namespace MyTemplate.Web;
+﻿namespace MyTemplate.Web.Enums;
 
 public enum ApiGroups { MyTemplate }

@@ -1,4 +1,4 @@
-namespace MyTemplate.Web.Security.Token;
+namespace MyTemplate.Web.Security.Token.Configuration;
 
 public interface IJwtConfig
 {

@@ -15,8 +15,7 @@ public class AuthorizeOperationFilter : IOperationFilter
         {
             return;
         }
-        if (operation.Parameters == null)
-            operation.Parameters = new List<OpenApiParameter>();
+        operation.Parameters ??= new List<OpenApiParameter>();
 
         operation.Security = new List<OpenApiSecurityRequirement>
     {

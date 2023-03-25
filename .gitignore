@@ -12,3 +12,5 @@
 /MyTemplate.Domain/bin
 /MyTemplate.Domain/obj
 /MyTemplate.Web/Logs
+/.vs/MyTemplate
+/global.json

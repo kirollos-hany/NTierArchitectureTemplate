@@ -1,4 +1,4 @@
-﻿namespace MyTemplate.Web.Security;
+﻿namespace MyTemplate.Web.Security.Enums;
 
 public enum LoginProviders
 {
