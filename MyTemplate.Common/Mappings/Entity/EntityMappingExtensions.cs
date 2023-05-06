@@ -6,11 +6,7 @@ public static class EntityMappingExtensions
 {
     public static EntityDto ToDto(this Entity entity)
     {
-        return new EntityDto
-        {
-            CreatedAt = entity.CreatedAt,
-            Id = entity.Id
-        };
+        return new EntityDto(entity.Id, entity.CreatedAt, entity.UpdatedAt);
     }
 
     public static Entity ToDomain(this EntityDto entityDto)

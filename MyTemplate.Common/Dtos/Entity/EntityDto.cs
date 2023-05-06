@@ -1,10 +1,3 @@
 namespace MyTemplate.Common.Dtos.Entity;
 
-public class EntityDto
-{
-    public Guid Id { get; set; }
-
-    public DateTime CreatedAt { get; set; }
-
-    public DateTime UpdatedAt { get; set; }
-}
+public record EntityDto(Guid Id, DateTime CreatedAt, DateTime UpdatedAt);
