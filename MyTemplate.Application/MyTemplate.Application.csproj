@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyTemplate.Infrastructure\MyTemplate.Infrastructure.csproj" />
+    <ProjectReference Include="..\MyTemplate.Common\MyTemplate.Common.csproj"/>
   </ItemGroup>
 
 </Project>

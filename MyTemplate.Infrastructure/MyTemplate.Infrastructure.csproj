@@ -21,6 +21,6 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
   </ItemGroup>
   <ItemGroup>
-<ProjectReference Include="..\MyTemplate.Common\MyTemplate.Common.csproj" />
+<ProjectReference Include="..\MyTemplate.Domain\MyTemplate.Domain.csproj" />
 </ItemGroup>
 </Project>
