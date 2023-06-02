@@ -91,6 +91,10 @@ The layers in the NTierArchitectureTemplate are:
 
 - **Infrastructure Layer**: This layer is responsible for providing infrastructure-related services, such as data access, IO operations. The infrastructure layer in this architecture is implemented using Entity Framework Core for data access
 
+<p align="center">
+  <img src="ntier-arch.png" />
+</p>
+
 ## Getting Started
 
 To get started with the NTierArchitectureTemplate, you can either clone the repository or download the source code as a ZIP archive.
