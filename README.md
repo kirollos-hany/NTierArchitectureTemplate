@@ -47,6 +47,8 @@ The template includes five main components:
     * Query splitting behavior is used as default
 - ExtCore Storage
     * configured to wwwroot/uploadedfiles
+- MediatR
+    * configured for dependency injection in ApplicationModule
 
 ## Installed Nuget Packages
 - [Serilog](https://www.nuget.org/packages/serilog/)
@@ -74,6 +76,8 @@ The template includes five main components:
 - [ExtCore.FileStorage.FileSystem](https://www.nuget.org/packages/ExtCore.FileStorage.FileSystem)
 - [ExtCore.FileStorage.Abstractions](https://www.nuget.org/packages/ExtCore.FileStorage.Abstractions)
 - [LanguageExt.Core](https://www.nuget.org/packages/LanguageExt.Core)
+- [MediatR](https://www.nuget.org/packages/MediatR)
+- [MediatR.Extensions.Autofac.DependencyInjection](https://www.nuget.org/packages/MediatR.Extensions.Autofac.DependencyInjection)
 
     
 
