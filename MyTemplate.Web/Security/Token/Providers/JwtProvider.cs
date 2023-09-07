@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using MyTemplate.Domain.Common.Entities;
-using MyTemplate.Web.Security.Enums;
+using MyTemplate.Application.Security.Enums;
 using MyTemplate.Web.Security.Token.Configuration;
 
 namespace MyTemplate.Web.Security.Token.Providers;

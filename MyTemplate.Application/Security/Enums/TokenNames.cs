@@ -1,4 +1,4 @@
-﻿namespace MyTemplate.Web.Security.Enums;
+﻿namespace MyTemplate.Application.Security.Enums;
 
 public enum TokenNames
 {

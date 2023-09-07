@@ -19,7 +19,7 @@ using MyTemplate.Infrastructure.Persistence;
 using MyTemplate.Web;
 using MyTemplate.Web.Extensions;
 using MyTemplate.Web.Filters;
-using MyTemplate.Web.Security.Enums;
+using MyTemplate.Application.Security.Enums;
 using MyTemplate.Web.Security.Token.Configuration;
 using MyTemplate.Web.Security.Token.Providers;
 using Newtonsoft.Json.Converters;
