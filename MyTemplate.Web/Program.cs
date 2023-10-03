@@ -37,8 +37,6 @@ Log.Logger = new LoggerConfiguration()
 builder
   .Host
   .UseSerilog((context, loggingConfig) => loggingConfig
-    .WriteTo
-    .Console()
     .ReadFrom
     .Configuration(context.Configuration));
 
