@@ -4,15 +4,13 @@ NTierArchitectureTemplate is a .NET Core template that provides a starting point
 
 ## Overview
 
-The template includes five main components:
+The template includes four main components:
 
 - **NTierArchitectureTemplate.Domain**: This project contains the core domain entities, exceptions and services for the application. It includes interfaces for IO operations and database persistence following the repository pattern along with specifications pattern. It includes entities that is used in authentication and authorization in the identity framework by default.
 
 - **NTierArchitectureTemplate.Infrastructure**: This project contains the implementation of the repositories, services, and interfaces defined in the domain project. It also includes the database context and entity configurations along with an extension method to setup the database context for use in the web project.
 
 - **NTierArchitectureTemplate.Application**: This project contains the application logic and the communication between the presentation layer and the domain layer.
-
-- **NTierArchitectureTemplate.Common**: This project contains the dtos and extension methods that is used for conversion back and forth between entity types and dtos.
 
 - **NTierArchitectureTemplate.Web**: This project contains the presentation layer of the application, which is built using ASP.NET Core Web API.
 
