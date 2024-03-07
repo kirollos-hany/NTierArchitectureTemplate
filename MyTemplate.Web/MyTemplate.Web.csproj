@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyTemplate.Application\MyTemplate.Application.csproj" />
+    <ProjectReference Include="..\MyTemplate.Infrastructure\MyTemplate.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
