@@ -1,5 +1,4 @@
 using Ardalis.Specification.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
 using MyTemplate.Domain.Common.Interfaces;
 using MyTemplate.Domain.Interfaces;
 using MyTemplate.Domain.Interfaces.Persistence;
